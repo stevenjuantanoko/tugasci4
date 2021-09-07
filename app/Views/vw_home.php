@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0">
-    <title>Starter Template · Bootstrap v5.0</title>
+    <title>Home</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
 
@@ -64,6 +64,7 @@
     <main class="container">
 
         <div class="starter-template text-center py-5 px-3">
+            </br>
             <h1>Welcome ! <?= session()->get('name'); ?></h1>
 
         </div>
