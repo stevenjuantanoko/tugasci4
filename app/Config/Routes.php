@@ -23,6 +23,7 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
+
 /*
  * --------------------------------------------------------------------
  * Route Definitions
@@ -31,13 +32,18 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+$routes->get('/register', 'Register::index');
+$routes->post('/register/process', 'Register::process');
+$routes->get('/login', 'Login::index');
+$routes->post('/login/process', 'Login::process');
+$routes->get('/logout', 'Login::logout');
 // $routes->get('/', 'Home::index');
-$routes->get('/', 'Page::page1');
-$routes->get('/page1', 'Page::page1');
-$routes->get('/page2', 'Page::page2');
-$routes->get('/page3', 'Page::page3');
-$routes->get('/page4', 'Page::page4');
-$routes->get('/page5', 'Page::page5');
+// $routes->get('/', 'Page::page1');
+// $routes->get('/page1', 'Page::page1');
+// $routes->get('/page2', 'Page::page2');
+// $routes->get('/page3', 'Page::page3');
+// $routes->get('/page4', 'Page::page4');
+// $routes->get('/page5', 'Page::page5');
 
 /*
  * --------------------------------------------------------------------

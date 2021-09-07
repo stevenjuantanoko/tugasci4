@@ -1,6 +1,11 @@
 <?php
 
+
 namespace Config;
+
+$autoload['libraries'] = array('database', 'session', 'form_validation');
+
+$autoload['helper'] = array('url');
 
 use CodeIgniter\Config\AutoloadConfig;
 
