@@ -8,4 +8,8 @@ class Home extends BaseController
 	{
 		return view('vw_home');
 	}
+	public function Items()
+	{
+		return view('layout/template');
+	}
 }
